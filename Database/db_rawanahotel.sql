@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2022 at 05:28 PM
+-- Generation Time: Jan 03, 2024 at 12:38 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `shaa_db`
+-- Database: `db_rawanahotel`
 --
 
 -- --------------------------------------------------------
@@ -45,8 +45,25 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`booking_id`, `customer_id`, `room_id`, `total`, `arrival_date`, `departure_date`, `booking_occupancy`, `is_deleted`, `date_updated`, `booking_status`) VALUES
-(1, 3, 1, 7500, '2022-11-07', '2022-11-10', 2, 0, '2022-11-06 17:01:30', 1),
-(2, 3, 1, 7500, '2022-11-07', '2022-11-10', 2, 1, '2022-11-06 17:03:12', 2);
+(7, 3, 2, 3000, '2022-11-27', '2022-11-29', 1, 0, '2022-11-26 00:13:10', 2),
+(8, 3, 2, 3000, '2022-12-28', '2022-12-30', 1, 0, '2022-12-04 22:38:00', 0),
+(9, 3, 1, 5000, '2023-11-29', '2023-12-01', 2, 0, '2023-11-26 22:40:32', 0),
+(10, 3, 1, 2500, '2023-11-27', '2023-11-28', 2, 0, '2023-11-26 23:12:28', 0),
+(11, 8, 1, 2500, '2023-12-04', '2023-12-05', 2, 0, '2023-11-26 23:13:15', 0),
+(12, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:30:47', 0),
+(13, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:31:11', 0),
+(14, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:32:05', 0),
+(15, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:34:04', 0),
+(16, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:36:46', 0),
+(17, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:42:50', 0),
+(18, 3, 1, 2500, '2023-12-06', '2023-12-07', 2, 0, '2023-11-26 23:44:06', 0),
+(19, 3, 1, 2500, '2024-01-05', '2024-01-06', 2, 0, '2024-01-03 14:47:09', 1),
+(21, 3, 1, 2500, '2024-01-16', '2024-01-17', 2, 0, '2024-01-03 16:30:50', 0),
+(22, 3, 1, 2500, '2024-01-14', '2024-01-15', 2, 0, '2024-01-03 16:34:41', 0),
+(23, 3, 1, 2500, '2024-01-14', '2024-01-15', 2, 0, '2024-01-03 16:37:40', 0),
+(24, 3, 1, 2500, '2024-01-14', '2024-01-15', 2, 0, '2024-01-03 16:39:41', 0),
+(25, 3, 1, 2500, '2024-01-14', '2024-01-15', 2, 0, '2024-01-03 16:39:58', 0),
+(26, 3, 1, 2500, '2024-01-24', '2024-01-25', 2, 0, '2024-01-03 16:57:22', 0);
 
 -- --------------------------------------------------------
 
@@ -72,7 +89,9 @@ INSERT INTO `category` (`cat_id`, `cat_name`, `cat_image`, `is_deleted`, `date_u
 (3, 'Double Room', 'Kitchen Mixers.jpg', 0, '2022-09-05 21:22:19'),
 (4, 'dd', 'images.jfif', 1, '2022-09-05 21:21:35'),
 (5, 'Phone Acc', 'hImYqMss.png', 1, '2022-09-05 22:23:22'),
-(6, 'Delux', 'Spouts.jpg', 0, '2022-11-06 11:01:37');
+(6, 'Delux', 'Spouts.jpg', 0, '2022-11-06 11:01:37'),
+(7, 'Single Room', 'room1.jpg', 0, '2022-11-07 21:30:22'),
+(8, 'Shoes', '14a1996cfe96713a6f5876ad08ee5224.jpg', 0, '2022-12-03 01:26:29');
 
 -- --------------------------------------------------------
 
@@ -94,9 +113,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `name`, `email`, `subject`, `message`, `date_updated`) VALUES
-(4, 'Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', '0713664071', 'sas', '2022-09-12 22:35:23'),
-(5, 'Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', '0713664071', 'dsds', '2022-09-15 10:28:09'),
-(15, 'Muthuwana Acharige Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', 'fdf', 'fdfd', '2022-11-06 15:10:50');
+(15, 'Muthuwana Acharige Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', 'fdf', 'fdfd', '2022-11-06 15:10:50'),
+(16, 'Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', 'Hellow i am kanishja', 'sss', '2023-11-18 16:50:31');
 
 -- --------------------------------------------------------
 
@@ -111,19 +129,24 @@ CREATE TABLE `customer` (
   `phone` varchar(255) NOT NULL,
   `nic` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `gender` int(2) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `is_deleted` int(2) NOT NULL
+  `is_deleted` int(2) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`customer_id`, `name`, `email`, `phone`, `nic`, `address`, `gender`, `password`, `is_deleted`) VALUES
-(1, '', 'admin', '', '', '', 0, '123456', 0),
-(2, 'Thilini Maheshika', 'thili@gmail.com', '0713664071', '962670426G', 'Banwalgodalla, Kosmulla', 2, '123456', 1),
-(3, 'Kanishka Dew Sandaruwa', 'kanishkadewsandaruwan@gmail.com', '0713664071', '962670426G', 'Banwalgodalla, Kosmulla', 1, '123456', 0);
+INSERT INTO `customer` (`customer_id`, `name`, `email`, `phone`, `nic`, `address`, `is_deleted`, `password`) VALUES
+(1, '', 'admin', '', '', '', 0, '12345'),
+(2, 'Thilini Maheshika', 'thili@gmail.com', '0713664071', '962670426G', 'Banwalgodalla, Kosmulla', 1, ''),
+(3, 'Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan@gmail.com', '0713664071', '962670426G', 'Banwalgodalla, Kosmulla', 0, '12345'),
+(4, 'Kanishka Dew Sandaruwan', 'Kanishkadewsandarusasaswan@gmail.com', '0713664071', '992670426V', 'Banwalgodalla, Kosmulla', 0, '12345'),
+(5, 'Kanishka Dew Sandaruwan', 'Kanishkadewsandarussasaasaswan@gmail.com', '0713664071', '992670426V', 'Banwalgodalla, Kosmulla', 0, ''),
+(6, 'Kanishka Dew Sandaruwan', 'Kanishkadewsandaruwan999@gmail.com', '0713664071', '992670426V', 'Banwalgodalla, Kosmulla', 0, ''),
+(7, 'Kanishka Dew Sandaruwan', 'Kanishkadewsandaruwan78@gmail.com', '0713664071', '992670426V', 'Banwalgodalla, Kosmulla', 1, ''),
+(8, 'Kanishka Dew Sandaruwan', 'kanishkadewsandaruwan94@gmail.com', '+94713664071', '992670426V', '', 0, ''),
+(9, 'Dew Sandaruwan', 'dew@gmail.com', '0713664075', '962670426G', 'Banwalgodalla, Kosmulla', 0, '12345');
 
 -- --------------------------------------------------------
 
@@ -142,8 +165,8 @@ CREATE TABLE `facility` (
 --
 
 INSERT INTO `facility` (`facility_id`, `facility_name`, `facility_desc`) VALUES
-(1, 'Restaurant', 'Usage of the Internet is becoming more common due to rapid advancement of technology and powe'),
-(3, 'Sports CLub', 'Usage of the Internet is becoming more common due to rapid advancement of technology and power.');
+(1, 'Restaurants', 'Usage of the Internet is becoming more common due to rapid advancement of technology and powe'),
+(3, 'Sports CLub', 'Usage of the Internet is becoming more common ssdue to rapid advancement of technology and power.   ss');
 
 -- --------------------------------------------------------
 
@@ -162,7 +185,9 @@ CREATE TABLE `gallery` (
 
 INSERT INTO `gallery` (`gallery_id`, `gallery_image`) VALUES
 (20, 'Spouts.jpg'),
-(21, 'Sink Accessories.jpg');
+(22, 'istockphoto-1163589059-612x612.jpg'),
+(23, 'Service1-1024x682.jpg'),
+(24, 'white-coat-syndrome-anxiety.webp');
 
 -- --------------------------------------------------------
 
@@ -181,7 +206,8 @@ CREATE TABLE `location` (
 --
 
 INSERT INTO `location` (`location_id`, `location_name`, `location_image`) VALUES
-(1, 'Mathara', 'banner_bg.jpg');
+(1, 'Mathara', 'banner_bg.jpg'),
+(3, 'Galle', 'Service1-1024x682.jpg');
 
 -- --------------------------------------------------------
 
@@ -207,7 +233,30 @@ CREATE TABLE `room` (
 --
 
 INSERT INTO `room` (`room_id`, `room_name`, `cat_id`, `room_details`, `room_price`, `room_occupancy`, `room_image`, `is_deleted`, `date_updated`, `is_active`) VALUES
-(1, 'Deulax Room', 6, '<p>dsdssss</p>', 2500, 2, 'room1.jpg', 0, '2022-11-06 12:46:27', 1);
+(1, 'Deulax Room', 6, 'Welcome to Deulax roo this is the most big room in this hotel', 2500, 3, 'room1.jpg', 0, '2022-11-06 12:46:27', 1),
+(2, 'Dulux Single Room', 7, '<p>sasa</p>', 1500, 1, 'room1.jpg', 0, '2022-11-07 21:30:56', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `room_gallery`
+--
+
+CREATE TABLE `room_gallery` (
+  `room_imageid` int(11) NOT NULL,
+  `room_image` varchar(255) NOT NULL,
+  `room_id` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `room_gallery`
+--
+
+INSERT INTO `room_gallery` (`room_imageid`, `room_image`, `room_id`) VALUES
+(3, 'Service1-1024x682.jpg', 1),
+(4, 'white-coat-syndrome-anxiety.webp', 1),
+(5, 'stock-photo-smiling-female-doctor-holding-medical-records.jpeg', 1),
+(6, 'download.jpeg', 2);
 
 -- --------------------------------------------------------
 
@@ -297,6 +346,12 @@ ALTER TABLE `room`
   ADD PRIMARY KEY (`room_id`);
 
 --
+-- Indexes for table `room_gallery`
+--
+ALTER TABLE `room_gallery`
+  ADD PRIMARY KEY (`room_imageid`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -304,25 +359,25 @@ ALTER TABLE `room`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `facility`
@@ -334,19 +389,25 @@ ALTER TABLE `facility`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `gallery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `gallery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
-  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
-  MODIFY `room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `room_gallery`
+--
+ALTER TABLE `room_gallery`
+  MODIFY `room_imageid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
