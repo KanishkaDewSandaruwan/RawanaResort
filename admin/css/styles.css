@@ -1,0 +1,61 @@
+.login-logo-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.navbar-background {
+  background-color: #050c2a;
+}
+
+.nav-flag.active,
+.nav-flag:hover,
+.nav-icon.active,
+.nav-icon:hover {
+  color: #fff !important;
+}
+
+.one-item {
+  padding: 18px;
+  background-color: #050c2a !important;
+  color: white;
+  border-radius: 10px;
+}
+
+.no-background {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.price_label {
+  background-color: red;
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.bg-navyblue {
+  background-color: #050c2a !important;
+}
+
+.bg-navyblue h3 {
+  color: #fff;
+}
+
+.settings-card {
+  background-color: #050c2a !important;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px !important;
+}
+
+.settings-card h6 {
+  color: #fff;
+}
+
+.text-small{
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+}
